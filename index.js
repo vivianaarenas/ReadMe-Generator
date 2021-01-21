@@ -24,13 +24,13 @@ inquirer
       message: "Please provide necessary usage information",
       name: "usage",
     },
-    // {
-    //   type: "list",
-    //   message: "Choose a license for the project",
-    //   //variable name i want it stored to
-    //   name: "license",
-    //   choices: ["Apache", "Boost", "BSD", "GPL", "GNU", "MIT"],
-    // },
+    {
+      type: "list",
+      message: "Choose a license for the project",
+      //variable name i want it stored to
+      name: "license",
+      choices: ["Apache", "Boost", "BSD", "GPL", "GNU", "MIT"],
+    },
     {
       type: "input",
       message: "What is your Github username?",
@@ -54,6 +54,7 @@ inquirer
       description,
       installation,
       usage,
+      license,
       github,
       email,
       contribution,
@@ -84,6 +85,9 @@ ${description}
 
   ${usage}
 
+  ## License
+
+  ${license}
   ## Contributing 
 
   ${contribution}
