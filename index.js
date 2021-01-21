@@ -1,12 +1,9 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
-// TODO: Include packages needed for this application
-
-// TODO: Create an array of questions for user input
 inquirer
   .prompt([
-    //Description, Installation, Usage, License, Contributing, Tests, and Questions
+    //Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
     {
       type: "input",
       message: "What is the title of your project?",
@@ -15,18 +12,16 @@ inquirer
     {
       type: "input",
       message: "Please provide a brief description of your project.",
-      //variable name i want it stored to
       name: "description",
     },
     {
       type: "input",
-      message: "Please provide installation instructions",
-      //variable name i want it stored to
+      message: "Please provide installation and testing instructions",
       name: "installation",
     },
     {
       type: "input",
-      message: "Please usage information and examples of project in use",
+      message: "Please provide necessary usage information",
       name: "usage",
     },
     // {
@@ -34,12 +29,11 @@ inquirer
     //   message: "Choose a license for the project",
     //   //variable name i want it stored to
     //   name: "license",
-    //   choices: ["Apache", "GNU", "MIT"],
+    //   choices: ["Apache", "Boost", "BSD", "GPL", "GNU", "MIT"],
     // },
     {
       type: "input",
       message: "What is your Github username?",
-      //variable name i want it stored to
       name: "github",
     },
     {
@@ -49,8 +43,8 @@ inquirer
     },
     {
       type: "input",
-      message: "Please describe guidelines for contribution",
-      //the variable where this got stored
+      message:
+        "Please describe the guidelines for contribution for this project",
       name: "contribution",
     },
   ])
@@ -58,11 +52,11 @@ inquirer
     const {
       title,
       description,
-      //   installation,
-      //   usage,
-      //   github,
-      //   email,
-      //   contribution,
+      installation,
+      usage,
+      github,
+      email,
+      contribution,
     } = answers;
 
     const generateReadMe = `
@@ -70,7 +64,39 @@ inquirer
 
 ## Description
 
-${description}`;
+${description}
+
+## Table of Contents
+  
+  * [Description](#description)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [Questions](#questions)
+
+  ## Installation 
+
+  ${installation}
+
+  ## Usage
+
+  ${usage}
+
+  ## Contributing 
+
+  ${contribution}
+
+  ## Questions
+
+  If you'd like to check out my other repositories, please visit:
+
+  [Github Profile](https://github.com/${github})
+
+  If you have any additional questions or want to reach out, please [email](mailto:${email}) me!
+ 
+  `;
 
     fs.writeFile("ReadMe.md", generateReadMe, (err) =>
       err ? console.log(err) : console.log("success!")
