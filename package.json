@@ -1,0 +1,23 @@
+{
+  "name": "ls",
+  "version": "1.0.0",
+  "description": "An interactive ReadMe Generator to make all of your readMe a little easier to write.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vivianaarenas/ReadMe-Generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vivianaarenas/ReadMe-Generator/issues"
+  },
+  "homepage": "https://github.com/vivianaarenas/ReadMe-Generator#readme",
+  "keywords": [],
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
