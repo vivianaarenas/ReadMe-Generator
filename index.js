@@ -27,7 +27,6 @@ inquirer
     {
       type: "list",
       message: "Choose a license for the project",
-      //variable name i want it stored to
       name: "license",
       choices: ["Apache", "Boost", "BSD", "GPL", "GNU", "MIT"],
     },
@@ -61,7 +60,7 @@ inquirer
     } = answers;
 
     const generateReadMe = `
-# ${title}
+# ${title}[version](https://img.shields.io/badge/version-1.0.0-blue)
 
 ## Description
 
