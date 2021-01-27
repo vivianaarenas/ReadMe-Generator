@@ -103,7 +103,7 @@ ${description}
 
   The following demonstrates the application up and running:
 
-  ![${title}](./Assets/demo.gif)
+  ![demo](./Assets/demo.gif)
   
   `;
 
