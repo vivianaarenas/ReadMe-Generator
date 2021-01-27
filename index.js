@@ -103,7 +103,7 @@ ${description}
 
   The following demonstrates the application up and running:
 
-  ![${title}]()
+  ![${title}](./Assets/demo.gif)
   `;
 
     fs.writeFile("ReadMe.md", generateReadMe, (err) =>
