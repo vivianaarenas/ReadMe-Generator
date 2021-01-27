@@ -101,9 +101,9 @@ ${description}
  
   ## Demo
 
-  The following demonstrates the application up an running:
+  The following demonstrates the application up and running:
 
-  ![${title} demo]()
+  ![${title}]()
   `;
 
     fs.writeFile("ReadMe.md", generateReadMe, (err) =>
