@@ -1,46 +1,45 @@
-
 # Demo ![version](https://img.shields.io/badge/version-1.0.0-blue)
 
 ## Description
 
-Use this ReadMe generator to quickly create ReadMes for all of your repositories!
+Generate a ReadMe quickly and easily by answering a couple of questions!
 
 ## Table of Contents
-  
-  * [Description](#description)
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [License](#license)
-  * [Contributing](#contributing)
-  * [Tests](#tests)
-  * [Questions](#questions)
 
-  ## Installation 
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
-  Run Install NPM
+## Installation
 
-  ## Usage
+Run NPM Install
 
-  Run node index.js
+## Usage
 
-  ## License
+Run Node index.js
 
-  MIT
-  ## Contributing 
+## License
 
-  Open Source
+none
 
-  ## Questions
+## Contributing
 
-  If you'd like to check out my other repositories, please visit:
+Open Source
 
-  [Github Profile](https://github.com/vivianaarenas)
+## Questions
 
-  If you have any additional questions or want to reach out, please [email](mailto:vivianaaarenas@gmail.com) me!
- 
-  ## Demo
+If you'd like to check out my other repositories, please visit:
 
-  The following demonstrates the application up an running:
+[Github Profile](https://github.com/vivianaarenas)
 
-  ![Demo demo]()
-  
+If you have any additional questions or want to reach out, please [email](mailto:vivianaaarenas@gmail.com) me!
+
+## Demo
+
+The following demonstrates the application up and running:
+
+![demo](Assets/demo.gif)
