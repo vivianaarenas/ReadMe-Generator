@@ -28,7 +28,7 @@ inquirer
       type: "list",
       message: "Choose a license for the project",
       name: "license",
-      choices: ["Apache", "Boost", "BSD", "GPL", "GNU", "MIT"],
+      choices: ["none", "Apache", "Boost", "BSD", "GPL", "GNU", "MIT"],
     },
     {
       type: "input",
@@ -99,6 +99,11 @@ ${description}
 
   If you have any additional questions or want to reach out, please [email](mailto:${email}) me!
  
+  ## Demo
+
+  The following demonstrates the application up an running:
+
+  ![${title} demo]()
   `;
 
     fs.writeFile("ReadMe.md", generateReadMe, (err) =>
